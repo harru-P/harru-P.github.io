@@ -7,6 +7,12 @@ body { margin: 0; padding: 0; }
     margin-bottom: 10px;
 }
 
+.Text {
+    text-align: center;
+    font-family: times, serif;
+    text-decoration: none;
+}
+
 .Bottom-header {
     text-align: center;
     height: 75px;
