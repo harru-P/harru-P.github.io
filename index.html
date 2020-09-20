@@ -1,0 +1,84 @@
+<!-- coded by har -->
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>CHS</title>
+        <link rel="stylesheet" href="webstyle.css">
+        <link rel="icon" href="media/logo.png" type="image/png">
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="header">
+            <a onclick="Show();">
+                <img class="logo" src="media/logo.png" alt="our logo noob">
+                <!-- this coding is really bad but it's best for now lol -->
+            </a>
+        </div>
+
+        <br><br>
+        <h1 class="text">Welcome to CHS!</h1>
+        <h2 class="text">We're a group of friends creating games and such!</h2>
+        
+        <br><br>
+        <h1 class="text">GAMES</h2>
+        <h2 id="b" class="text" onmouseover="Recolor(true, 'b');" onmouseout="Recolor(false, 'b');" onclick="Redirect('roblox_b');">Bloxxer</h2>
+        <img class="thumbnail" src="media/bloxxer.jpg" onclick="Redirect('roblox_b');" alt="Bloxxer thumbnail jpeg lol">
+        <p class="description">A game based on Murder Mystery style games just without a Sheriff or Hero. Survive until the time runs out.</p>
+        <h2 id="chs" class="text" onmouseover="Recolor(true, 'chs');" onmouseout="Recolor(false, 'chs');" onclick="Redirect('roblox_chs');">CHS Island</h2>
+        <img class="thumbnail" src="media/chsisland.jpg" onclick="Redirect('roblox_chs');" alt="Chs island thumbnail jpeg lol">
+        <p class="description">Welcome to our island! this is a sequel to THE BUNKER</p>
+        <br><br>
+
+        <h1 class="text">SOCIAL MEDIAS</h1>
+        <h2 id="redirect" class="text" onmouseover="Recolor(true, 'redirect');" onmouseout="Recolor(false, 'redirect');" onclick="Redirect('discord');">Discord</h2>
+        <h2 id="t" class="text" onmouseover="Recolor(true, 't');" onmouseout="Recolor(false, 't');" onclick="Redirect('twitter');">Twitter</h2>
+        <h2 id="roblox_g" class="text" onmouseover="Recolor(true, 'roblox_g');" onmouseout="Recolor(false, 'roblox_g');" onclick="Redirect('roblox_g');">Roblox Group</h2>
+        
+        <br><br><br>
+
+        <div class="footer">
+            <br><br>
+            <h1 class="f-text">CHS, last updated: 2020</h1>
+            <br>
+            <p class="f-text">end</p>
+        </div>
+
+        <script type="text/javascript">
+            function Redirect(URL){
+                if(URL === 'discord'){
+                    window.location = "https://discord.gg/SPsMWa9"
+                }else if(URL === 'roblox_b'){
+                    window.location = "https://www.roblox.com/games/4794100491/Bloxxer"
+                }else if(URL === 'roblox_chs'){
+                    window.location = "https://www.roblox.com/games/5196719237/Cool-HomoSapiens-Island"
+                }else if(URL === 'twitter'){
+                    window.location = "https://twitter.com/CoolSapiens/"
+                }else if(URL === 'roblox_g'){
+                    window.location = "https://www.roblox.com/groups/5679690/Cool-Homo-Sapiens"
+                }
+            }
+            
+            function Recolor(Value, id){
+                if(Value === true){
+                    document.getElementById(id).style.color = "rgb(75,75,75)";
+                    document.body.style.cursor = "pointer";
+                }else{
+                    document.getElementById(id).style.color = "black";
+                    document.body.style.cursor = "default";
+                }
+            }
+
+            function Show(){
+                msg("Coming soon...?");
+            }
+
+            function msg(String){
+                alert(String);
+            }
+
+            msg("Hello and welcome to CHS website! This is a very early access build, so expect broken things.");
+        </script>
+    </body>
+</html>
